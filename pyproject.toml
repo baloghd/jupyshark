@@ -1,0 +1,29 @@
+[project]
+name = "jupyshark"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jedi-language-server>=0.43.1",
+    "jupyter-resource-usage>=1.1.0",
+    "jupyterlab>=4.3.5",
+    "jupyterlab-execute-time>=3.2.0",
+    "jupyterlab-lsp>=5.1.0",
+    "jupyterlab-spreadsheet-editor>=0.7.2",
+    "jupyterlab-unfold>=0.3.3",
+    "lckr-jupyterlab-variableinspector>=3.2.4",
+]
+
+[project.entry-points."jupyterlab.pre_build_config"]
+jupyshark = "jupyshark.install:main"
+
+[project.scripts]
+jupyshark-setup = "jupyshark.install:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["jupyshark"]
