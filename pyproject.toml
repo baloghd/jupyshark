@@ -1,7 +1,7 @@
 [project]
 name = "jupyshark"
 version = "0.1.0"
-description = "Add your description here"
+description = "A collection of jupyterlab extensions as a meta package for a more pleasant (and productive) UX."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -14,12 +14,7 @@ dependencies = [
     "jupyterlab-unfold>=0.3.3",
     "lckr-jupyterlab-variableinspector>=3.2.4",
 ]
-
-[project.entry-points."jupyterlab.pre_build_config"]
-jupyshark = "jupyshark.install:main"
-
-[project.scripts]
-jupyshark-setup = "jupyshark.install:main"
+keywords = ['jupyter', 'jupyterlab', 'notebook']
 
 [build-system]
 requires = ["hatchling"]
