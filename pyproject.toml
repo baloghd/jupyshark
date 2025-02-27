@@ -1,6 +1,6 @@
 [project]
 name = "jupyshark"
-version = "0.1.0"
+version = "0.1.1"
 description = "A collection of jupyterlab extensions as a meta package for a more pleasant (and productive) UX."
 readme = "README.md"
 requires-python = ">=3.11"
